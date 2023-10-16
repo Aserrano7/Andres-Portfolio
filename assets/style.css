@@ -9,7 +9,7 @@ header {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #ccd5ae;
     width: 100%;
-    font-size: 50px;
+    font-size: 100%;
 }
 
 body {
@@ -18,9 +18,9 @@ body {
 
 .page-title {
     display: inline-block;
-    height: 30px;
     color: white;
     font-size: 75px;
+  
 }
 
 .navbar {
@@ -115,14 +115,13 @@ body {
 .flexbox-item1 {
     display: flex;
     flex-direction: column;
-    width: 84%;
     margin-left: auto;
     margin-right: auto;
+    width: 80%;
     border: 10px solid white;
 }
 
 .flexbox-item1 img {
-    height: 50%;
     width: 100%;
     border: 2px solid black;
 }
@@ -130,8 +129,8 @@ body {
 #side {
     padding: 10px;
     text-align: center;
-    border-right: 2px solid black;
     font-size: 40px;
+    border-right: 1px solid black;
 }
 
 figcaption {
@@ -142,7 +141,7 @@ figcaption {
 }
 
 .flexbox-projects a {
-    height: 100px;
+    height: 100%;
     width: 100%;
 }
 
@@ -173,3 +172,43 @@ figcaption {
 .contact-me a:hover {
     background-color: white;
 }
+
+@media screen and (min-width: 320px) and (max-width:426px) {
+    #side {
+        border: none;
+    }
+
+    .navlinks {
+        flex-direction: column;
+        margin-right: 25%
+    }
+
+    .subheader {
+        border: none;
+    }
+
+    .about-me {
+        width: 89%;
+        flex-direction: column;
+    }
+
+    .flexbox-item1 {
+        width: 90%;
+    }
+
+    .flexbox-projects {
+        width: 80%;
+    }
+
+    .contact-me {
+        flex-direction: column;
+        width: 89%;
+        font-size: 25px;
+    }
+
+    figure {
+        font-size: 70%;
+    }
+}
+
+
