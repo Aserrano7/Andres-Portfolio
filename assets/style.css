@@ -147,3 +147,11 @@ figcaption {
     height: 100px;
     width:100%;
 }
+
+.flexbox-item1 a:hover {
+    opacity: .8;
+}
+
+.flexbox-projects img:hover {
+    opacity: .4;
+}
